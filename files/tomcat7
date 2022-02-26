@@ -1,0 +1,19 @@
+#
+#
+#
+#
+TOMCAT7_USER=tomcat7
+#
+#
+#
+#
+TOMCAT7_GROUP=tomcat7
+#
+#
+#
+#
+JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+#
+#
+#
+#
