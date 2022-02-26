@@ -1,0 +1,51 @@
+{
+  "revision_id": "d926fd482c3d567c33a39dff98b364e85552ba54fbf7057cfa5ba08aee553b81",
+  "name": "tomcat_cookbook",
+  "run_list": [
+    "recipe[tomcat_cookbook::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "tomcat_cookbook": {
+      "version": "0.1.0",
+      "identifier": "a6409b338e09b625e6b0e06f2f5f378b4a75e64d",
+      "dotted_decimal_identifier": "46795881463024054.10668221492309855.61071389222477",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "8303a981f83c4effda05c883d9a5dee49761ca8b",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "tomcat_cookbook",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "tomcat_cookbook (0.1.0)": [
+
+      ]
+    }
+  }
+}
