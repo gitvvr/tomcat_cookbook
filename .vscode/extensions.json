@@ -1,1 +1,5 @@
-
+{
+  "recommendations": [
+      "chef-software.chef"
+  ]
+}
