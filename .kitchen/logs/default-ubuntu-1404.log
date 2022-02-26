@@ -1,0 +1,251 @@
+I, [2022-02-26T22:12:19.811753 #15280]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2022-02-26T22:12:27.554433 #15280]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2022-02-26T22:12:32.484880 #15280]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2022-02-26T22:13:33.885248 #15280]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[K==> default: Matching MAC address for NAT networking...
+I, [2022-02-26T22:13:34.526756 #15280]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' version '201808.24.0' is up to date...
+I, [2022-02-26T22:13:38.920437 #15280]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-tomcat_cookbook-default-ubuntu-1404-5f168a9b-049d-4305-b122-611344b3c5e6
+I, [2022-02-26T22:13:39.714462 #15280]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2022-02-26T22:13:40.495977 #15280]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2022-02-26T22:13:40.919597 #15280]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2022-02-26T22:13:40.919786 #15280]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2022-02-26T22:13:41.428361 #15280]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2022-02-26T22:13:41.639058 #15280]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2022-02-26T22:13:42.774074 #15280]  INFO -- default-ubuntu-1404: ==> default: Running 'pre-boot' VM customizations...
+I, [2022-02-26T22:13:42.985398 #15280]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2022-02-26T22:13:51.109028 #15280]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2022-02-26T22:13:51.680967 #15280]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2022-02-26T22:13:51.681127 #15280]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2022-02-26T22:13:51.681244 #15280]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2022-02-26T22:14:28.914351 #15280]  INFO -- default-ubuntu-1404:     default: Warning: Connection reset. Retrying...
+I, [2022-02-26T22:14:37.441654 #15280]  INFO -- default-ubuntu-1404:     default: 
+I, [2022-02-26T22:14:37.444410 #15280]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2022-02-26T22:14:37.444548 #15280]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2022-02-26T22:14:41.026360 #15280]  INFO -- default-ubuntu-1404:     default: 
+I, [2022-02-26T22:14:41.026580 #15280]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2022-02-26T22:14:48.379594 #15280]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2022-02-26T22:14:49.252957 #15280]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2022-02-26T22:14:51.269943 #15280]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2022-02-26T22:14:51.376626 #15280]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2022-02-26T22:14:52.341803 #15280]  INFO -- default-ubuntu-1404:     default: The guest additions on this VM do not match the installed version of
+I, [2022-02-26T22:14:52.341964 #15280]  INFO -- default-ubuntu-1404:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2022-02-26T22:14:52.342076 #15280]  INFO -- default-ubuntu-1404:     default: prevent things such as shared folders from working properly. If you see
+I, [2022-02-26T22:14:52.342181 #15280]  INFO -- default-ubuntu-1404:     default: shared folder errors, please make sure the guest additions within the
+I, [2022-02-26T22:14:52.342398 #15280]  INFO -- default-ubuntu-1404:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2022-02-26T22:14:52.342536 #15280]  INFO -- default-ubuntu-1404:     default: your host and reload your VM.
+I, [2022-02-26T22:14:52.342682 #15280]  INFO -- default-ubuntu-1404:     default: 
+I, [2022-02-26T22:14:52.342854 #15280]  INFO -- default-ubuntu-1404:     default: Guest Additions Version: 5.2.18
+I, [2022-02-26T22:14:52.343048 #15280]  INFO -- default-ubuntu-1404:     default: VirtualBox Version: 6.1
+I, [2022-02-26T22:14:52.369039 #15280]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2022-02-26T22:14:58.932859 #15280]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
+I, [2022-02-26T22:14:58.933094 #15280]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => C:/Users/varun/.kitchen/cache
+I, [2022-02-26T22:15:01.244987 #15280]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2022-02-26T22:15:23.733879 #15280]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2022-02-26T22:15:23.736850 #15280]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2022-02-26T22:15:23.883506 #15280]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (3m3.93s).
+I, [2022-02-26T22:15:23.887499 #15280]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2022-02-26T22:15:24.872756 #15280]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2022-02-26T22:15:24.912129 #15280]  INFO -- default-ubuntu-1404: Policy lock file doesn't exist, running `C:/opscode/chef-workstation/bin/chef-cli.BAT install` for Policyfile C:/Users/varun/learn-chef/cookbooks/tomcat_cookbook/Policyfile.rb...
+I, [2022-02-26T22:15:38.005118 #15280]  INFO -- default-ubuntu-1404: Building policy tomcat_cookbook
+I, [2022-02-26T22:15:38.005284 #15280]  INFO -- default-ubuntu-1404: Expanded run list: recipe[tomcat_cookbook::default]
+I, [2022-02-26T22:15:38.005397 #15280]  INFO -- default-ubuntu-1404: Caching Cookbooks...
+I, [2022-02-26T22:15:38.005498 #15280]  INFO -- default-ubuntu-1404: Installing tomcat_cookbook >= 0.0.0 from path
+I, [2022-02-26T22:15:45.471042 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:15:45.471207 #15280]  INFO -- default-ubuntu-1404: Lockfile written to C:/Users/varun/learn-chef/cookbooks/tomcat_cookbook/Policyfile.lock.json
+I, [2022-02-26T22:15:45.979901 #15280]  INFO -- default-ubuntu-1404: Policy revision id: d926fd482c3d567c33a39dff98b364e85552ba54fbf7057cfa5ba08aee553b81
+I, [2022-02-26T22:15:46.044823 #15280]  INFO -- default-ubuntu-1404: Updating policy lock using `C:/opscode/chef-workstation/bin/chef-cli.BAT update`
+I, [2022-02-26T22:15:51.737230 #15280]  INFO -- default-ubuntu-1404: Building policy tomcat_cookbook
+I, [2022-02-26T22:15:51.737391 #15280]  INFO -- default-ubuntu-1404: Expanded run list: recipe[tomcat_cookbook::default]
+I, [2022-02-26T22:15:51.737508 #15280]  INFO -- default-ubuntu-1404: Caching Cookbooks...
+I, [2022-02-26T22:15:51.737614 #15280]  INFO -- default-ubuntu-1404: Installing tomcat_cookbook >= 0.0.0 from path
+I, [2022-02-26T22:15:56.290902 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:15:56.291102 #15280]  INFO -- default-ubuntu-1404: Lockfile written to C:/Users/varun/learn-chef/cookbooks/tomcat_cookbook/Policyfile.lock.json
+I, [2022-02-26T22:15:56.782730 #15280]  INFO -- default-ubuntu-1404: Policy revision id: d926fd482c3d567c33a39dff98b364e85552ba54fbf7057cfa5ba08aee553b81
+I, [2022-02-26T22:15:56.838766 #15280]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2022-02-26T22:15:56.871331 #15280]  INFO -- default-ubuntu-1404: Exporting cookbook dependencies from Policyfile C:/Users/varun/AppData/Local/Temp/default-ubuntu-1404-sandbox-20220226-15280-mxwrnx using `C:/opscode/chef-workstation/bin/chef-cli.BAT export`...
+I, [2022-02-26T22:16:05.859838 #15280]  INFO -- default-ubuntu-1404: Exported policy 'tomcat_cookbook' to C:/Users/varun/AppData/Local/Temp/default-ubuntu-1404-sandbox-20220226-15280-mxwrnx
+I, [2022-02-26T22:16:05.860074 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:16:05.860187 #15280]  INFO -- default-ubuntu-1404: To converge this system with the exported policy, run:
+I, [2022-02-26T22:16:05.860338 #15280]  INFO -- default-ubuntu-1404:   cd C:/Users/varun/AppData/Local/Temp/default-ubuntu-1404-sandbox-20220226-15280-mxwrnx
+I, [2022-02-26T22:16:05.860448 #15280]  INFO -- default-ubuntu-1404:   chef-client -z
+I, [2022-02-26T22:16:05.899546 #15280]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2022-02-26T22:16:05.902149 #15280]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2022-02-26T22:16:05.928181 #15280]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2022-02-26T22:16:06.133488 #15280]  INFO -- default-ubuntu-1404: -----> Installing Chef install only if missing package
+I, [2022-02-26T22:16:06.438376 #15280]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2022-02-26T22:16:06.469585 #15280]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2022-02-26T22:16:07.522122 #15280]  INFO -- default-ubuntu-1404: Download complete.
+I, [2022-02-26T22:16:07.567299 #15280]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2022-02-26T22:16:07.568035 #15280]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2022-02-26T22:16:07.571085 #15280]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2022-02-26T22:16:07.575536 #15280]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1929/metadata.txt
+I, [2022-02-26T22:16:07.577379 #15280]  INFO -- default-ubuntu-1404: trying wget...
+I, [2022-02-26T22:16:08.833595 #15280]  INFO -- default-ubuntu-1404: sha1	bdf95b94236788173bc27b0888a5b5cd35517796
+I, [2022-02-26T22:16:08.836325 #15280]  INFO -- default-ubuntu-1404: sha256	71d303ff3ea6e56c070e595fd5b84ea5904abfe14af884bd9c73ebfa49f72452
+I, [2022-02-26T22:16:08.845468 #15280]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/15.1.36/ubuntu/14.04/chef_15.1.36-1_amd64.deb
+I, [2022-02-26T22:16:08.845716 #15280]  INFO -- default-ubuntu-1404: version	15.1.36
+I, [2022-02-26T22:16:08.848865 #15280]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2022-02-26T22:16:08.872725 #15280]  INFO -- default-ubuntu-1404: /tmp/omnibus/cache/chef_15.1.36-1_amd64.deb exists
+I, [2022-02-26T22:16:08.873621 #15280]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2022-02-26T22:16:10.800600 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:16:10.801240 #15280]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2022-02-26T22:16:10.803914 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:16:10.806671 #15280]  INFO -- default-ubuntu-1404: You are installing a package without a version pin.  If you are installing
+I, [2022-02-26T22:16:10.809212 #15280]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2022-02-26T22:16:10.810201 #15280]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2022-02-26T22:16:10.813199 #15280]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2022-02-26T22:16:10.813318 #15280]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2022-02-26T22:16:10.813419 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:16:10.813521 #15280]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2022-02-26T22:16:10.813621 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:16:10.813720 #15280]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2022-02-26T22:16:10.819871 #15280]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2022-02-26T22:16:11.447065 #15280]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2022-02-26T22:16:13.135353 #15280]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36174 files and directories currently installed.)
+I, [2022-02-26T22:16:13.137296 #15280]  INFO -- default-ubuntu-1404: Preparing to unpack .../cache/chef_15.1.36-1_amd64.deb ...
+I, [2022-02-26T22:16:13.170446 #15280]  INFO -- default-ubuntu-1404: Unpacking chef (15.1.36-1) ...
+I, [2022-02-26T22:16:47.622695 #15280]  INFO -- default-ubuntu-1404: Setting up chef (15.1.36-1) ...
+I, [2022-02-26T22:16:47.878126 #15280]  INFO -- default-ubuntu-1404: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2022-02-26T22:16:48.069567 #15280]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2022-02-26T22:16:56.017091 #15280]  INFO -- default-ubuntu-1404: +---------------------------------------------+
+I, [2022-02-26T22:16:56.018004 #15280]  INFO -- default-ubuntu-1404: [32m✔[0m 2 product licenses accepted.
+I, [2022-02-26T22:16:56.019180 #15280]  INFO -- default-ubuntu-1404: +---------------------------------------------+
+I, [2022-02-26T22:16:56.869522 #15280]  INFO -- default-ubuntu-1404: Starting Chef Infra Client, version 15.1.36
+I, [2022-02-26T22:16:59.835549 #15280]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2022-02-26T22:17:00.000151 #15280]  INFO -- default-ubuntu-1404: Using policy 'tomcat_cookbook' at revision 'd926fd482c3d567c33a39dff98b364e85552ba54fbf7057cfa5ba08aee553b81'
+I, [2022-02-26T22:17:00.033674 #15280]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["tomcat_cookbook::default@0.1.0 (a6409b3)"]
+I, [2022-02-26T22:17:00.077605 #15280]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2022-02-26T22:17:00.131978 #15280]  INFO -- default-ubuntu-1404:   - tomcat_cookbook (0.1.0)
+I, [2022-02-26T22:17:00.132839 #15280]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2022-02-26T22:17:00.144852 #15280]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2022-02-26T22:17:00.167192 #15280]  INFO -- default-ubuntu-1404: Converging 9 resources
+I, [2022-02-26T22:17:00.168073 #15280]  INFO -- default-ubuntu-1404: Recipe: tomcat_cookbook::default
+I, [2022-02-26T22:17:00.170588 #15280]  INFO -- default-ubuntu-1404:   * apt_update[update] action update
+I, [2022-02-26T22:17:00.171118 #15280]  INFO -- default-ubuntu-1404:     - force update new lists of packages
+I, [2022-02-26T22:17:00.171740 #15280]  INFO -- default-ubuntu-1404:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-02-26T22:17:00.182969 #15280]  INFO -- default-ubuntu-1404:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-02-26T22:17:00.183838 #15280]  INFO -- default-ubuntu-1404:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-02-26T22:17:38.354036 #15280]  INFO -- default-ubuntu-1404:     * execute[apt-get -q update] action run
+I, [2022-02-26T22:17:38.354227 #15280]  INFO -- default-ubuntu-1404:       - execute ["apt-get", "-q", "update"]
+I, [2022-02-26T22:17:38.354359 #15280]  INFO -- default-ubuntu-1404:   
+I, [2022-02-26T22:17:38.358744 #15280]  INFO -- default-ubuntu-1404:   * apt_update[update] action update
+I, [2022-02-26T22:17:38.361932 #15280]  INFO -- default-ubuntu-1404:     - force update new lists of packages
+I, [2022-02-26T22:17:38.375023 #15280]  INFO -- default-ubuntu-1404:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-02-26T22:17:38.377465 #15280]  INFO -- default-ubuntu-1404:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-02-26T22:17:38.443425 #15280]  INFO -- default-ubuntu-1404:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-02-26T22:18:08.386958 #15280]  INFO -- default-ubuntu-1404:     * execute[apt-get -q update] action run
+I, [2022-02-26T22:18:08.387712 #15280]  INFO -- default-ubuntu-1404:       - execute ["apt-get", "-q", "update"]
+I, [2022-02-26T22:18:08.388467 #15280]  INFO -- default-ubuntu-1404:   
+I, [2022-02-26T22:20:08.682824 #15280]  INFO -- default-ubuntu-1404:   * apt_package[tomcat7] action install
+I, [2022-02-26T22:20:08.683112 #15280]  INFO -- default-ubuntu-1404:     - install version 7.0.52-1ubuntu0.16 of package tomcat7
+I, [2022-02-26T22:20:08.762576 #15280]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/default/tomcat7] action create
+I, [2022-02-26T22:20:08.766365 #15280]  INFO -- default-ubuntu-1404:     - update content in file /etc/default/tomcat7 from 3f5a92 to fe8bc0
+I, [2022-02-26T22:20:08.768896 #15280]  INFO -- default-ubuntu-1404:     --- /etc/default/tomcat7	2022-02-26 16:49:37.886290996 +0000
+I, [2022-02-26T22:20:08.771220 #15280]  INFO -- default-ubuntu-1404:     +++ /etc/default/.chef-tomcat720220226-2014-1w5g1hu	2022-02-26 16:50:08.838808118 +0000
+I, [2022-02-26T22:20:08.772733 #15280]  INFO -- default-ubuntu-1404:     @@ -1,48 +1,20 @@
+I, [2022-02-26T22:20:08.779214 #15280]  INFO -- default-ubuntu-1404:     -# Run Tomcat as this user ID. Not setting this or leaving it blank will use the
+I, [2022-02-26T22:20:08.780687 #15280]  INFO -- default-ubuntu-1404:     -# default of tomcat7.
+I, [2022-02-26T22:20:08.782206 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.784276 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.785670 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.790935 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.793536 #15280]  INFO -- default-ubuntu-1404:      TOMCAT7_USER=tomcat7
+I, [2022-02-26T22:20:08.795670 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.797449 #15280]  INFO -- default-ubuntu-1404:     -# Run Tomcat as this group ID. Not setting this or leaving it blank will use
+I, [2022-02-26T22:20:08.802374 #15280]  INFO -- default-ubuntu-1404:     -# the default of tomcat7.
+I, [2022-02-26T22:20:08.803689 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.806774 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.808260 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.812098 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.817674 #15280]  INFO -- default-ubuntu-1404:      TOMCAT7_GROUP=tomcat7
+I, [2022-02-26T22:20:08.819005 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.820364 #15280]  INFO -- default-ubuntu-1404:     -# The home directory of the Java development kit (JDK). You need at least
+I, [2022-02-26T22:20:08.822350 #15280]  INFO -- default-ubuntu-1404:     -# JDK version 1.5. If JAVA_HOME is not set, some common directories for 
+I, [2022-02-26T22:20:08.835374 #15280]  INFO -- default-ubuntu-1404:     -# OpenJDK, the Sun JDK, and various J2SE 1.5 versions are tried.
+I, [2022-02-26T22:20:08.836187 #15280]  INFO -- default-ubuntu-1404:     -#JAVA_HOME=/usr/lib/jvm/openjdk-6-jdk
+I, [2022-02-26T22:20:08.836848 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.837509 #15280]  INFO -- default-ubuntu-1404:     -# You may pass JVM startup parameters to Java here. If unset, the default
+I, [2022-02-26T22:20:08.860708 #15280]  INFO -- default-ubuntu-1404:     -# options will be: -Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC
+I, [2022-02-26T22:20:08.861803 #15280]  INFO -- default-ubuntu-1404:      #
+I, [2022-02-26T22:20:08.862186 #15280]  INFO -- default-ubuntu-1404:     -# Use "-XX:+UseConcMarkSweepGC" to enable the CMS garbage collector (improved
+I, [2022-02-26T22:20:08.862567 #15280]  INFO -- default-ubuntu-1404:     -# response time). If you use that option and you run Tomcat on a machine with
+I, [2022-02-26T22:20:08.862972 #15280]  INFO -- default-ubuntu-1404:     -# exactly one CPU chip that contains one or two cores, you should also add
+I, [2022-02-26T22:20:08.863528 #15280]  INFO -- default-ubuntu-1404:     -# the "-XX:+CMSIncrementalMode" option.
+I, [2022-02-26T22:20:08.863932 #15280]  INFO -- default-ubuntu-1404:     -JAVA_OPTS="-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC"
+I, [2022-02-26T22:20:08.864296 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.864651 #15280]  INFO -- default-ubuntu-1404:     -# To enable remote debugging uncomment the following line.
+I, [2022-02-26T22:20:08.865112 #15280]  INFO -- default-ubuntu-1404:     -# You will then be able to use a java debugger on port 8000.
+I, [2022-02-26T22:20:08.865483 #15280]  INFO -- default-ubuntu-1404:     -#JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+I, [2022-02-26T22:20:08.865910 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.866266 #15280]  INFO -- default-ubuntu-1404:     -# Java compiler to use for translating JavaServer Pages (JSPs). You can use all
+I, [2022-02-26T22:20:08.866628 #15280]  INFO -- default-ubuntu-1404:     -# compilers that are accepted by Ant's build.compiler property.
+I, [2022-02-26T22:20:08.867300 #15280]  INFO -- default-ubuntu-1404:     -#JSP_COMPILER=javac
+I, [2022-02-26T22:20:08.867649 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.868047 #15280]  INFO -- default-ubuntu-1404:     -# Use the Java security manager? (yes/no, default: no)
+I, [2022-02-26T22:20:08.868504 #15280]  INFO -- default-ubuntu-1404:     -#TOMCAT7_SECURITY=no
+I, [2022-02-26T22:20:08.868963 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.869444 #15280]  INFO -- default-ubuntu-1404:     -# Number of days to keep logfiles in /var/log/tomcat7. Default is 14 days.
+I, [2022-02-26T22:20:08.870187 #15280]  INFO -- default-ubuntu-1404:     -#LOGFILE_DAYS=14
+I, [2022-02-26T22:20:08.873889 #15280]  INFO -- default-ubuntu-1404:     -# Whether to compress logfiles older than today's
+I, [2022-02-26T22:20:08.874359 #15280]  INFO -- default-ubuntu-1404:     -#LOGFILE_COMPRESS=1
+I, [2022-02-26T22:20:08.876081 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.877163 #15280]  INFO -- default-ubuntu-1404:     -# Location of the JVM temporary directory
+I, [2022-02-26T22:20:08.878024 #15280]  INFO -- default-ubuntu-1404:     -# WARNING: This directory will be destroyed and recreated at every startup !
+I, [2022-02-26T22:20:08.878757 #15280]  INFO -- default-ubuntu-1404:     -#JVM_TMP=/tmp/tomcat7-temp
+I, [2022-02-26T22:20:08.879201 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:20:08.879629 #15280]  INFO -- default-ubuntu-1404:     -# If you run Tomcat on port numbers that are all higher than 1023, then you
+I, [2022-02-26T22:20:08.880058 #15280]  INFO -- default-ubuntu-1404:     -# do not need authbind.  It is used for binding Tomcat to lower port numbers.
+I, [2022-02-26T22:20:08.880601 #15280]  INFO -- default-ubuntu-1404:     -# NOTE: authbind works only with IPv4.  Do not enable it when using IPv6.
+I, [2022-02-26T22:20:08.881039 #15280]  INFO -- default-ubuntu-1404:     -# (yes/no, default: no)
+I, [2022-02-26T22:20:08.881906 #15280]  INFO -- default-ubuntu-1404:     -#AUTHBIND=no
+I, [2022-02-26T22:20:08.887280 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.887690 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.888089 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.888504 #15280]  INFO -- default-ubuntu-1404:     +JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+I, [2022-02-26T22:20:08.888948 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.889346 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.889743 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:08.890160 #15280]  INFO -- default-ubuntu-1404:     +#
+I, [2022-02-26T22:20:10.017531 #15280]  INFO -- default-ubuntu-1404:   * service[tomcat7] action restart
+I, [2022-02-26T22:20:10.017713 #15280]  INFO -- default-ubuntu-1404:     - restart service service[tomcat7]
+I, [2022-02-26T22:20:24.341464 #15280]  INFO -- default-ubuntu-1404:   * apt_package[tomcat7-docs] action install
+I, [2022-02-26T22:20:24.341636 #15280]  INFO -- default-ubuntu-1404:     - install version 7.0.52-1ubuntu0.16 of package tomcat7-docs
+I, [2022-02-26T22:20:43.911668 #15280]  INFO -- default-ubuntu-1404:   * apt_package[tomcat7-admin] action install
+I, [2022-02-26T22:20:43.912432 #15280]  INFO -- default-ubuntu-1404:     - install version 7.0.52-1ubuntu0.16 of package tomcat7-admin
+I, [2022-02-26T22:21:02.673870 #15280]  INFO -- default-ubuntu-1404:   * apt_package[tomcat7-examples] action install
+I, [2022-02-26T22:21:02.674976 #15280]  INFO -- default-ubuntu-1404:     - install version 7.0.52-1ubuntu0.16 of package tomcat7-examples
+I, [2022-02-26T22:21:02.687023 #15280]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/tomcat7/tomcat-users.xml] action create
+I, [2022-02-26T22:21:02.687916 #15280]  INFO -- default-ubuntu-1404:     - update content in file /etc/tomcat7/tomcat-users.xml from b43070 to 6fd753
+I, [2022-02-26T22:21:02.688756 #15280]  INFO -- default-ubuntu-1404:     --- /etc/tomcat7/tomcat-users.xml	2014-01-25 20:13:05.000000000 +0000
+I, [2022-02-26T22:21:02.690014 #15280]  INFO -- default-ubuntu-1404:     +++ /etc/tomcat7/.chef-tomcat-users20220226-2014-3duvi7.xml	2022-02-26 16:51:02.807812075 +0000
+I, [2022-02-26T22:21:02.690676 #15280]  INFO -- default-ubuntu-1404:     @@ -6,9 +6,7 @@
+I, [2022-02-26T22:21:02.691369 #15280]  INFO -- default-ubuntu-1404: The ASF licenses this file to You under the Apache License, Version 2.0
+I, [2022-02-26T22:21:02.691963 #15280]  INFO -- default-ubuntu-1404: (the "License"); you may not use this file except in compliance with
+I, [2022-02-26T22:21:02.692983 #15280]  INFO -- default-ubuntu-1404: the License.  You may obtain a copy of the License at
+I, [2022-02-26T22:21:02.693653 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:21:02.694602 #15280]  INFO -- default-ubuntu-1404:     http://www.apache.org/licenses/LICENSE-2.0
+I, [2022-02-26T22:21:02.695348 #15280]  INFO -- default-ubuntu-1404:     -
+I, [2022-02-26T22:21:02.701879 #15280]  INFO -- default-ubuntu-1404: Unless required by applicable law or agreed to in writing, software
+I, [2022-02-26T22:21:02.702995 #15280]  INFO -- default-ubuntu-1404: distributed under the License is distributed on an "AS IS" BASIS,
+I, [2022-02-26T22:21:02.704701 #15280]  INFO -- default-ubuntu-1404: WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+I, [2022-02-26T22:21:02.705333 #15280]  INFO -- default-ubuntu-1404:     @@ -26,12 +24,6 @@
+I, [2022-02-26T22:21:02.705860 #15280]  INFO -- default-ubuntu-1404: and thus are ignored when reading this file. Do not forget to remove
+I, [2022-02-26T22:21:02.706352 #15280]  INFO -- default-ubuntu-1404: <!.. ..> that surrounds them.
+I, [2022-02-26T22:21:02.706906 #15280]  INFO -- default-ubuntu-1404:      -->
+I, [2022-02-26T22:21:02.709326 #15280]  INFO -- default-ubuntu-1404:     -<!--
+I, [2022-02-26T22:21:02.709885 #15280]  INFO -- default-ubuntu-1404:     -  <role rolename="tomcat"/>
+I, [2022-02-26T22:21:02.710620 #15280]  INFO -- default-ubuntu-1404:     -  <role rolename="role1"/>
+I, [2022-02-26T22:21:02.711058 #15280]  INFO -- default-ubuntu-1404:     -  <user username="tomcat" password="tomcat" roles="tomcat"/>
+I, [2022-02-26T22:21:02.711499 #15280]  INFO -- default-ubuntu-1404:     -  <user username="both" password="tomcat" roles="tomcat,role1"/>
+I, [2022-02-26T22:21:02.712052 #15280]  INFO -- default-ubuntu-1404:     -  <user username="role1" password="tomcat" roles="role1"/>
+I, [2022-02-26T22:21:02.714030 #15280]  INFO -- default-ubuntu-1404:     --->
+I, [2022-02-26T22:21:02.720609 #15280]  INFO -- default-ubuntu-1404:     -</tomcat-users>
+I, [2022-02-26T22:21:02.724687 #15280]  INFO -- default-ubuntu-1404:     +   <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+I, [2022-02-26T22:21:02.725373 #15280]  INFO -- default-ubuntu-1404:     +  </tomcat-users>
+I, [2022-02-26T22:21:03.888553 #15280]  INFO -- default-ubuntu-1404:   * service[tomcat7] action restart
+I, [2022-02-26T22:21:03.888781 #15280]  INFO -- default-ubuntu-1404:     - restart service service[tomcat7]
+I, [2022-02-26T22:21:04.300542 #15280]  INFO -- default-ubuntu-1404: 
+I, [2022-02-26T22:21:04.302464 #15280]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2022-02-26T22:21:04.303278 #15280]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2022-02-26T22:21:04.303990 #15280]  INFO -- default-ubuntu-1404: Chef Infra Client finished, 12/18 resources updated in 04 minutes 07 seconds
+I, [2022-02-26T22:21:04.351940 #15280]  INFO -- default-ubuntu-1404: Downloading files from <default-ubuntu-1404>
+I, [2022-02-26T22:21:04.389674 #15280]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (5m40.39s).
